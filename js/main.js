@@ -46,10 +46,10 @@ for (let pokemon of pokemons) {
 
   //TEXT CONTENT
   newCardTitle.textContent = pokemon.name;
-  newCardType.textContent = pokemon.type.join(', ');
-  newCardWeight.textContent = pokemon.weight;
+  newCardType.textContent = `Type: ${pokemon.type.join(', ')}`;
+  newCardWeight.textContent = `Weight: ${pokemon.weight}`;
   newCardAge.textContent = pokemon.candy_count ? `${pokemon.candy_count} age` : 'Age is unknown';
-  newCardWeaknesses.textContent = pokemon.weaknesses.join(', ');
+  newCardWeaknesses.textContent = `Weaknesses: ${pokemon.weaknesses.join(', ')}`;
 
   //APPEND CHILD
   elPokemonList.appendChild(newItemPokemon);
