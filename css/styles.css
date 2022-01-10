@@ -8,37 +8,43 @@ body {
   margin-bottom: 70px;
 }
 
+.site-header__btn {
+  right: 0;
+}
+
 .pokemon-search-form {
   margin-bottom: 100px;
 }
 
 .pokemon-search-form__name-select {
+  font-size: 24px;
+  line-height: 28px;
   padding: 16px 80px;
   width: 260px;
   margin-right: 35px;
   border-radius: 15px;
   border: 2px solid rgb(0, 0, 0);
   background-color: #fff;
+  background-image: url("../img/arrow-down.svg");
+  background-position: right 65px center;
+  background-repeat: no-repeat;
+  background-size: 24px;
 }
 
-/* .pokemon-search-form__name-select::after {
-  content: "";
-  display: block;
-  width: 24px;
-  height: 24px;
-  background-image: url("../img/arrow-down.svg");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: contain;
-} */
-
 .pokemon-search-form__search {
+  font-size: 24px;
+  line-height: 28px;
   padding: 16px 18px 16px 30px;
   width: 300px;
   margin-right: 35px;
   border: 2px solid rgb(0, 0, 0);
-  border-radius: 15px;
+  border-radius: 16px;
   background-color: #fff;
+  background-color: #fff;
+  background-image: url("../img/icon-search.svg");
+  background-position: right 32px center;
+  background-repeat: no-repeat;
+  background-size: 24px;
 }
 
 .pokemon-search-form__search::placeholder {
@@ -46,17 +52,31 @@ body {
 }
 
 .pokemon-search-form__sort-select {
+  font-size: 24px;
+  line-height: 28px;
   padding: 16px 80px;
   width: 260px;
   margin-right: 35px;
   border: 2px solid rgb(0, 0, 0);
   border-radius: 15px;
   background-color: #fff;
+  background-image: url("../img/arrow-down.svg");
+  background-position: right 65px center;
+  background-repeat: no-repeat;
+  background-size: 24px;
 }
 .pokemon-search-form__btn {
+  font-size: 24px;
+  line-height: 28px;
   padding: 16px 64px;
   width: 200px;
   border: 2px solid rgb(0, 0, 0);
   border-radius: 15px;
   background-color: #fff;
+}
+
+.pokemons__card:hover {
+  box-shadow: 0px 0px 7px 0px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 0px 0px 7px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 0px 7px 0px rgba(0, 0, 0, 0.75);
 }

@@ -15,8 +15,12 @@
 
 <body>
   <div class="container-xxl">
-    <header class="site-header d-flex flex-column align-items-center">
+
+    <header class="site-header d-flex flex-column align-items-center position-relative">
       <h1 class="site-header__heading visually-hidden">Pokemon</h1>
+      <button class="site-header__btn bg-transparent border-0 position-absolute" type="button">
+        <img src="/img/heart.svg" alt="Button likes pokemons" width="50" height="50">
+      </button>
       <a class="site-header__link" href="#">
         <img class="site-header__img d-block" src="/img/pokemon_logo.png" alt="Logo of Pokemon" width="610"
           height="225">
@@ -34,7 +38,7 @@
           <div>
             <select class="form-control js-name-select pokemon-search-form__name-select text-center fw-bold"
               name="gross" aria-label="Gross">
-              <option value="">Gross</option>
+              <option value="" disabled selected>Gross</option>
             </select>
           </div>
 
@@ -47,8 +51,6 @@
             <select class="form-control js-sort-select text-center pokemon-search-form__sort-select fw-bold" name="sort"
               aria-label="Sorting">
               <option value="" disabled selected>Aa-Zz</option>
-              <option value="az">A-Z</option>
-              <option value="za">Z-A</option>
             </select>
           </div>
           <div>
@@ -58,18 +60,20 @@
 
         <!-- POKEMONS LIST -->
         <ul class="pokemons__list row list-unstyled">
-          <li class="pokemons__item col-sm-6 col-md-3 mb-4">
+          <!-- <li class="pokemons__item col-sm-6 col-md-3 mb-4">
             <div class="card pokemons__card pt-3 border-2 border-dark" style="border-radius: 20px; width: 18rem;">
               <div class="p-4 mx-auto">
                 <img class="card-img-top img-fluid" src="/img/pokemon.png" alt="Pokemon photo" width="157" height="157">
               </div>
               <div class="card-body px-4 border-top border-2 border-dark">
-                <div class="d-flex justify-content-between">
+                <div class="d-flex justify-content-between align-items-start">
                   <div>
                     <h5 class="card-title fw-bold mb-0">Pokemons</h5>
                     <p class="pokemons__type">Grass, Poison</p>
                   </div>
-                  <img src="/img/heart.svg" alt="icon heart" width="30" height="30">
+                  <button class="bg-transparent border-0" type="button">
+                    <img class="d-block" src="/img/heart.svg" alt="Button likes pokemons" width="30" height="30">
+                  </button>
                 </div>
                 <div class="d-flex flex-column">
                   <p class="pokemons__weight h4 fw-bold me-3">6.9 kg</p>
@@ -77,7 +81,7 @@
                 </div>
               </div>
             </div>
-          </li>
+          </li> -->
         </ul>
       </div>
     </section>
