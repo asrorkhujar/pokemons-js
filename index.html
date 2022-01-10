@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JS-Imtixon | Pokemon</title>
+  <link rel="stylesheet" href="css/bootstrap5.min.css">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <div class="container-xxl">
+    <header class="site-header d-flex flex-column align-items-center">
+      <h1 class="site-header__heading visually-hidden">Pokemon</h1>
+      <a class="site-header__link" href="#">
+        <img class="site-header__img d-block" src="/img/pokemon_logo.png" alt="Logo of Pokemon" width="610"
+          height="225">
+      </a>
+    </header>
+  </div>
+
+  <main class="site-main">
+    <section>
+      <div class="container-xxl">
+        <h2 class="visually-hidden">Pokemons</h2>
+        <form class="js-pokemon-search-form pokemon-search-form d-flex align-items-center justify-content-center"
+          action="https://echo.htmlacademy.ru" method="GET">
+
+          <div>
+            <select class="form-control js-name-select pokemon-search-form__name-select text-center fw-bold"
+              name="gross" aria-label="Gross">
+              <option value="">Gross</option>
+            </select>
+          </div>
+
+          <div>
+            <input class="form-control js-pokemon-search-input pokemon-search-form__search fw-bold" type="search"
+              name="search" placeholder="Search" aria-label="Search">
+          </div>
+
+          <div>
+            <select class="form-control js-sort-select text-center pokemon-search-form__sort-select fw-bold" name="sort"
+              aria-label="Sorting">
+              <option value="" disabled selected>Aa-Zz</option>
+              <option value="az">A-Z</option>
+              <option value="za">Z-A</option>
+            </select>
+          </div>
+          <div>
+            <button class="btn pokemon-search-form__btn bg-white fw-bold" type="submit">Button</button>
+          </div>
+        </form>
+
+        <!-- POKEMONS LIST -->
+        <ul class="pokemons__list row list-unstyled">
+          <li class="pokemons__item col-sm-6 col-md-3 mb-4">
+            <div class="card pokemons__card pt-3 border-2 border-dark" style="border-radius: 20px; width: 18rem;">
+              <div class="p-4 mx-auto">
+                <img class="card-img-top img-fluid" src="/img/pokemon.png" alt="Pokemon photo" width="157" height="157">
+              </div>
+              <div class="card-body px-4 border-top border-2 border-dark">
+                <div class="d-flex justify-content-between">
+                  <div>
+                    <h5 class="card-title fw-bold mb-0">Pokemons</h5>
+                    <p class="pokemons__type">Grass, Poison</p>
+                  </div>
+                  <img src="/img/heart.svg" alt="icon heart" width="30" height="30">
+                </div>
+                <div class="d-flex flex-column">
+                  <p class="pokemons__weight h4 fw-bold me-3">6.9 kg</p>
+                  <p class="pokemons__age h4 fw-bold">99 age</p>
+                </div>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <script src="js/bootstrap5.bundle.min.js"></script>
+  <script src="js/pokemons.js"></script>
+  <script src="js/main.js"></script>
+</body>
+
+</html>
