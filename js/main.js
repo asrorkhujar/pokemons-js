@@ -42,7 +42,7 @@ for (let pokemon of pokemons) {
   newCardBottomInfoWrapper.setAttribute('class', 'd-flex flex-column mt-auto');
   newCardWeight.setAttribute('class', 'pokemons__weight h5 fw-bold me-3');
   newCardAge.setAttribute('class', 'pokemons__age h5 fw-bold');
-  newCardWeaknesses.setAttribute('class', 'pokemons__weaknesses fw-bold');
+  newCardWeaknesses.setAttribute('class', 'pokemons__weaknesses fw-bold text-danger');
 
   //TEXT CONTENT
   newCardTitle.textContent = pokemon.name;
